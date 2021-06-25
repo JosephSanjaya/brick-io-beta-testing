@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BrickioBetaTesting" parent="Theme.BrickioBetaTesting.Primary">
+        <item name="colorPrimary">@color/primaryLightColor</item>
+        <item name="colorSecondary">@color/secondaryLightColor</item>
+    </style>
+
+    <style name="Theme.BrickioBetaTesting.Primary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryVariant">@color/primaryColor</item>
+        <item name="colorOnPrimary">@color/primaryTextColor</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondaryVariant">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/secondaryTextColor</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.BrickioBetaTesting.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.BrickioBetaTesting.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.BrickioBetaTesting.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.BrickioBetaTesting.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.BrickioBetaTesting.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.BrickioBetaTesting.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.BrickioBetaTesting.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.BrickioBetaTesting.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.BrickioBetaTesting.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.BrickioBetaTesting.Body2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.BrickioBetaTesting.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.BrickioBetaTesting.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.BrickioBetaTesting.Overline</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.BrickioBetaTesting" parent="Theme.BrickioBetaTesting.Primary">
+        <item name="colorPrimary">@color/primaryDarkColor</item>
+        <item name="colorSecondary">@color/secondaryDarkColor</item>
+    </style>
+</resources>

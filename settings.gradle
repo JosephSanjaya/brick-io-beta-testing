@@ -1,0 +1,3 @@
+rootProject.name = "Brick.io Beta Testing"
+include ':app'
+include ':core'

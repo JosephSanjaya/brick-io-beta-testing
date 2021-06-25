@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "279537113527",
+    "project_id": "brickiobetatesting",
+    "storage_bucket": "brickiobetatesting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279537113527:android:7eb5278c773c138d1bb032",
+        "android_client_info": {
+          "package_name": "com.joseph.brick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279537113527-gsqlue31pjo0pepbf3cp3hbun4naegfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ4XdB0Rh8wVa2JfTFl5W7tulNiSkqUv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279537113527-gsqlue31pjo0pepbf3cp3hbun4naegfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

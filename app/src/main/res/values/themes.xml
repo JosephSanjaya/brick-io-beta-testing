@@ -5,7 +5,7 @@
         <item name="colorSecondary">@color/secondaryLightColor</item>
     </style>
 
-    <style name="Theme.BrickioBetaTesting.Primary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.BrickioBetaTesting.Primary" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimaryVariant">@color/primaryColor</item>
         <item name="colorOnPrimary">@color/primaryTextColor</item>
@@ -28,5 +28,17 @@
         <item name="textAppearanceButton">@style/TextAppearance.BrickioBetaTesting.Button</item>
         <item name="textAppearanceCaption">@style/TextAppearance.BrickioBetaTesting.Caption</item>
         <item name="textAppearanceOverline">@style/TextAppearance.BrickioBetaTesting.Overline</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="SplashTheme.Light" parent="Theme.BrickioBetaTesting">
+<!--        <item name="android:windowBackground">@drawable/bg_splash</item>-->
     </style>
 </resources>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Brick.io Beta Testing</string>
+    <string name="label_title">Brick</string>
+    <string name="label_subtitle">What is Brick?</string>
+    <string name="label_body">
+        Brick is an open banking API provider for South East Asia allowing companies to access banking and other financial data in a secure and structured way.
+    </string>
 </resources>

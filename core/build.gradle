@@ -18,6 +18,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "BRICK_CLIENT_ID", BRICK_CLIENT_ID
         buildConfigField "String", "BRICK_SECRET", BRICK_SECRET
+        buildConfigField "String", "BRICK_NAME", BRICK_NAME
+        buildConfigField "String", "BRICK_URL", BRICK_URL
     }
 
     buildTypes {
@@ -66,12 +68,11 @@ dependencies {
     api platform('com.google.firebase:firebase-bom:28.2.0')
     api 'com.google.firebase:firebase-crashlytics-ktx'
     api 'com.google.firebase:firebase-analytics-ktx'
-    api 'com.google.firebase:firebase-firestore-ktx'
     api 'com.google.firebase:firebase-dynamic-links-ktx'
-    api 'com.google.firebase:firebase-auth-ktx'
     api 'com.google.firebase:firebase-perf-ktx'
 //    api "io.onebrick.sdk:$versions.brick"
 
+    implementation "androidx.security:security-crypto:1.1.0-alpha03"
     api 'com.google.crypto.tink:tink-android:1.6.0'
     api 'com.squareup.retrofit2:retrofit:2.9.0'
     api 'io.noties.markwon:core:4.6.2'

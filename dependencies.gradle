@@ -8,7 +8,7 @@ ext.versions = [
         kotlin          : '1.5.20',
         koin            : '2.2.2',
         brick           : '1.0',
-        coroutines      : '1.5.0-native-mt',
+        coroutines      : '1.5.0',
         lifecycle       : '2.3.1',
         navigation      : '2.3.5',
         dataStore       : '1.0.0-alpha08',

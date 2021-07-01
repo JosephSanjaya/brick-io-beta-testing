@@ -8,30 +8,30 @@ package com.joseph.brick.core.presentation
 
 import androidx.lifecycle.*
 import com.joseph.brick.core.domain.State
-import io.onebrick.sdk.model.AccessToken
+import io.onebrick.sdk.model.InstitutionData
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
-class AuthenticationObserver(
+class InsitutionObserver(
     private val view: Interfaces,
-    private val viewModel: AuthenticationViewModel,
+    private val viewModel: InsitutionViewModel,
     private val owner: LifecycleOwner
 ) : LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     fun onCreate() {
         owner.lifecycleScope.launch {
-            viewModel.mAccessToken.collect {
+            viewModel.mInsitution.collect {
                 when (it) {
-                    is State.Single.Idle -> view.onRequestAccessTokenIdle()
-                    is State.Single.Loading -> view.onRequestAccessTokenLoading()
+                    is State.Single.Idle -> view.onFetchInsitutionIdle()
+                    is State.Single.Loading -> view.onFetchInsitutionLoading()
                     is State.Single.Success -> {
-                        view.onRequestAccessTokenSuccess(it.data)
-                        viewModel.resetAccessTokenState()
+                        view.onFetchInsitutionSuccess(it.data)
+                        viewModel.resetInsitutionState()
                     }
                     is State.Single.Failed -> {
-                        view.onRequestAccessTokenFailed(it.throwable)
-                        viewModel.resetAccessTokenState()
+                        view.onFetchInsitutionFailed(it.throwable)
+                        viewModel.resetInsitutionState()
                     }
                 }
             }
@@ -39,19 +39,19 @@ class AuthenticationObserver(
     }
 
     interface Interfaces {
-        fun onRequestAccessTokenIdle() {
+        fun onFetchInsitutionIdle() {
             // Do Nothing
         }
 
-        fun onRequestAccessTokenLoading() {
+        fun onFetchInsitutionLoading() {
             // Do Nothing
         }
 
-        fun onRequestAccessTokenSuccess(accessToken: AccessToken?) {
+        fun onFetchInsitutionSuccess(insitution: List<InstitutionData>?) {
             // Do Nothing
         }
 
-        fun onRequestAccessTokenFailed(e: Throwable) {
+        fun onFetchInsitutionFailed(e: Throwable) {
             // Do Nothing
         }
     }

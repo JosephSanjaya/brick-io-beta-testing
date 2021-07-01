@@ -16,6 +16,14 @@ object State {
         data class Failed<T>(val throwable: Throwable, val data: T? = null) : Single<T>()
     }
 
+    sealed class Bank<T> {
+        class Idle<T> : Bank<T>()
+        class Loading<T> : Bank<T>()
+        data class MFAA<T>(val data: T) : Bank<T>()
+        data class Success<T>(val data: T) : Bank<T>()
+        data class Failed<T>(val throwable: Throwable, val data: T? = null) : Bank<T>()
+    }
+
     sealed class Download {
         object Idle : Download()
         object Loading : Download()

@@ -8,8 +8,10 @@ package com.joseph.brick.core.di
 
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
-//import com.joseph.brick.core.data.AuthenticationRepository
-//import com.joseph.brick.core.presentation.AuthenticationViewModel
+import com.joseph.brick.core.data.AuthenticationRepository
+import com.joseph.brick.core.data.InsitutionRepository
+import com.joseph.brick.core.presentation.AuthenticationViewModel
+import com.joseph.brick.core.presentation.InsitutionViewModel
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -29,10 +31,16 @@ val CoreModules = module {
             EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
         )
     }
-//    single {
-//        AuthenticationRepository(get())
-//    }
-//    viewModel {
-//        AuthenticationViewModel(get())
-//    }
+    single {
+        AuthenticationRepository(get())
+    }
+    viewModel {
+        AuthenticationViewModel(get())
+    }
+    single {
+        InsitutionRepository()
+    }
+    viewModel {
+        InsitutionViewModel(get())
+    }
 }

@@ -1,3 +1,4 @@
 <resources>
-    <string name="label_button_start">Start</string>
+    <string name="label_button_start">Start UI</string>
+    <string name="label_button_access_token">Get Access Token</string>
 </resources>

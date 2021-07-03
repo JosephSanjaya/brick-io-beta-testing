@@ -65,11 +65,23 @@
             android:padding="16dp"
             android:text="@string/label_body"
             android:textAppearance="?attr/textAppearanceBody1"
-            app:layout_constraintBottom_toTopOf="@+id/btnStart"
+            app:layout_constraintBottom_toTopOf="@+id/btnAccessToken"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAccessToken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{listener}"
+            android:text="@string/label_button_access_token"
+            app:layout_constraintBottom_toBottomOf="@id/btnStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvBody" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnStart"
@@ -81,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvBody" />
+            app:layout_constraintTop_toBottomOf="@+id/btnAccessToken" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
